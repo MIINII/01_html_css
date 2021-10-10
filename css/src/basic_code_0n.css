@@ -1,0 +1,30 @@
+#wrap {
+  width: 100%; height: 100%;
+  background-color: tomato;
+}
+body {
+  height: 100vh;
+  margin: 20px;
+  background-color: tomato;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px; /* 초기 사이즈 */
+  height: 200px;
+  font-size: 30px;
+  color: #fff;
+  /* '숫자'의 부모는 div */
+}
+
+.box01 { background-color: rgb(71,131,117); }
+.box02 { background-color: rgb(15,206,109); }
+.box03 { background-color: rgb(84,86,170); }
+
