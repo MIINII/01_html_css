@@ -1,0 +1,71 @@
+/* style.css */
+
+body {
+  background-color: #dfdfdf;
+}
+
+h1 {
+  font-weight: 700;
+  text-align: center;
+  margin: 40px;
+}
+
+section {
+  height: 70vh;
+  width: 35vw;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+section > div {
+  border: 3px solid white;
+  margin: 0 20px 0 0;
+}
+
+section > div:nth-child(1) {
+  position: relative;
+  width: 160px; height: 280px;
+  background-color: tomato;
+}
+section > div:nth-child(2) {
+  margin-right: 0;
+  position: relative;
+  width: 160px; height: 280px;
+  background-color: teal;
+}
+section > div:nth-child(3) {
+  position: relative;
+  width: 160px; height: 280px;
+  background-color: burlywood;
+}
+section > div:nth-child(4) {
+  margin-right: 0;
+  position: relative;
+  width: 160px; height: 280px;
+  background-color: thistle;
+}
+
+
+
+.tomato, .burlywood, .teal, .thistle {
+  position: absolute;
+  top: 20px;
+  width: 160px; height: 100px;
+  background-color: white;
+}
+
+div > span {
+  position: absolute;
+  top: 15px;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+div > p {
+  position: absolute;
+  top: 35px;
+  font-weight: 700;
+  font-size: 20px;
+}
