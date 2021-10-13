@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap');
+
+
+/* @media screen and (max-width: 479px) {
+  html,
+  body {
+    width: 100%;
+    min-width: 320px;
+  }
+} */
+
+* { color: #dfdfdf; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: no-repeat center/100% url("../img/lucia_album.jpg");
+  backdrop-filter: brightness(60%) blur(10px);
+  margin:0;
+  padding: 20px;
+}
+
+.playlist-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.playlist-header__column:first-child {
+  display: flex;
+  /* align-items: flex-end; */
+  /* position: absolute; */
+}
+
+.playlist-header__column:last-child {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* // header ---------------------------------------------------------------- */
+
+.play-section {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.play-section__cover {
+  display: flex;
+  min-width: 150px;
+  height: 150px;
+  /* background-image: url("../img/lucia_album.jpg"); */
+  background: no-repeat center/100% url("../img/lucia_album.jpg");
+  border-radius: 0.625rem;
+}
+
+.play-section__des {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+.play-section__title {
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+.play-section__singer {
+  display: flex;
+  padding-top: 15px;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+/* // section ----------------------------------------------------------------------------- */
+
+.operation-btn {
+  display: flex;
+  width: 90vw;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+  /* margin:auto; */
+}
+
+.operation-btn > * {
+  margin-right: 3%;
+  border: none;
+}
+.operation-btn > button:last-child { margin-right: 0;}
+
+.fa-play, .fa-heart, .fa-plus { color: #616a7a; }
+
+.play {
+  width: 50%;
+  height: 50px;
+  background-color: white;
+  color: #616a7a;
+  border-radius: 1.875rem;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.like,
+.add {
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 50%;
+}
+/* // form ------------------------------------------------------------------------------ */
+
+
+.playlist-article {
+  display: flex;
+  width: 65vw;
+  height: 48vh;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left-end;
+  margin:auto;
+  margin-top: 50px;
+}
+
+.playlist__row{
+  display: flex;
+  align-items: center;
+}
+.row__cover{
+  width: 70px;
+  height: 70px;
+  background-size: 70px auto;
+  background-position: 50% 50%;
+  border-radius: .625rem
+}
+
+.playlist__row:nth-child(1) > .row__cover {background-image: url("../img/yerin.jpg");}
+.playlist__row:nth-child(2) > .row__cover {background-image: url("../img/maemuller.jpg");}
+.playlist__row:nth-child(3) > .row__cover {background-image: url("../img/iu.jpg");}
+.playlist__row:nth-child(4) > .row__cover {background-image: url("../img/kwon.jpg");}
+
+.row__inform { margin-left: 20px;}
+
+.row__inform > h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+.row__inform > span {
+  font-size: 0.9375rem;
+  font-weight: 400;
+}
